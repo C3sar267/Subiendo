@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando Formularios</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Nombres</legend>
+        <form name="formulario" method="post" action="/send.php">
+            
+            <input type="text" name="nombre" placeholder="Su nombre de usuario"
+                   required pattern="[A-Za-z0-9]{5,40}"
+                   title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 8" />
+        </form>
+        
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Apellidos</legend>
+        <form name="formulario" method="post" action="/send.php">
+            
+            <input type="text" name="nombre" placeholder="Su Apelldo usuario"
+           minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+" />
+        </form>
+        
+    </fieldset>
+
+   
+    <fieldset>
+
+
+        <fieldset>
+
+            Correo: <input type="email" name="correo" size="20">
+
+        </fieldset>
+
+      
+
+        <fieldset>      
+            Numero DNI: <input type="email" name="correo" size="8">
+            
+
+            
+            <p>Tipo de documento:
+              <input type="radio" name="p1" value="1">DNI
+              <input type="radio" name="p1" value="1">OTRO
+            </p>
+    
+
+        </fieldset>
+
+        
+    
+</body>
+</html>
